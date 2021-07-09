@@ -1,0 +1,191 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 5, 2021, 10:30:16 AM
+    Author     : placideh
+*/
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    background-color:#f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.3em;
+    margin:0;
+}
+#main-header{
+    background-color:rgb(0,0,450);
+    color:#f4f4f4;
+    position: fixed;
+    display:flex;
+    top:0.02em;
+    height: 3em;
+    width:100%;
+    z-index:1;
+    box-sizing:border-box;
+}
+#main-header >h3 {
+    position:absolute;
+    top:-0.4em;
+      left:1em;
+
+}
+a {
+    color:blue;
+    text-decoration:none;
+    padding:0.5em;
+    border-radius:5px;  
+}
+a:hover{
+  color:blueviolet;
+  background:#f4f4f4;
+  border:1px solid #ccc;
+}
+.showcase {
+    background-image:url("../images/imageHome.jpg");
+     height:25em;
+      width:100%;
+      text-align:center;
+      color:#f4f4f4;
+      box-sizing:border-box;
+      position:relative;
+}
+.showcase >h1 {
+  position:relative;
+  top:1em;
+}
+.showcase >p {
+  position:relative;
+  top:6.5em;
+  font-size:135%;
+  /*background-color:#333;*/
+  color:#fff;
+}
+#navbar {
+    background: #ccc;
+    height: 3em;
+    position:fixed;
+    top:3em;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 2em;
+    
+}
+.myList {
+    display: flex;
+    position: relative;
+    left:15em;
+    list-style: none;
+    
+   
+}
+.myList > li {
+    margin-right: 4em;
+}
+.container {
+  width:80%;
+  margin:auto;
+  margin-bottom:5%;
+}
+.my-form {
+    overflow: hidden;
+    position: relative;
+    height:20em;
+    box-sizing: border-box;
+}
+.error {
+    color:red;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size:16px;
+    font-style: oblique;
+}
+
+#main-footer {
+    background-color:rgb(0,0,450);
+    color:#f4f4f4;
+    height:7em;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+    width:100%;
+}
+#main-footer >h4 {
+    position: absolute;
+    left:1em;
+}
+#main-footer >p {
+    position: absolute;
+    left:23em;
+    top:4em;
+}
+.footerList {
+    list-style: none;
+    position: absolute;
+    right: 2em;
+}
+.footerList >li {
+    margin-bottom:0.3em;
+}
+.aTagfooter{
+    color:#fff;
+}
+
+.selectionList {
+    margin-left: 8.5em;
+    width:20em;
+     padding:10px;
+}
+.inputTag {
+     width:20em;
+     padding:10px;
+     position: relative;
+     left:10em;
+}
+.cost {
+    width:20em;
+     padding:10px;
+     position: relative;
+     left:19.7em;
+}
+.plateno {
+    width:20em;
+     padding:10px;
+     position: relative;
+     left:17.5em;
+}
+.updateBtn{
+    position: relative;
+    top:2em;
+    width:10em;
+    left:21em;
+}
+.cancelBtn{
+    position: relative;
+    top:0.5em;
+    width:10em;
+    left:31em;
+    text-decoration: none;
+    background: #000;
+    color:#fff;
+}
+.inputTag {
+     width:20em;
+     padding:10px;
+     position: relative;
+     left:10em;
+}
+.my-input {
+    margin-bottom: 7px;
+}
+.registerBtn{
+    position: relative;
+    top:2em;
+    width:10em;
+    left:23em;
+}

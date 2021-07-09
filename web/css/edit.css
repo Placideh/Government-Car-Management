@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 7, 2021, 6:56:04 AM
+    Author     : placideh
+*/
+
+* {
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+}
+
+#main-header{
+    background-color:rgb(0,0,450);
+    color:#f4f4f4;
+    position: fixed;
+    display:flex;
+    top:0.02em;
+    height: 3em;
+    width:100%;
+    z-index:1;
+    box-sizing:border-box;
+}
+.my-form {
+    position:relative;
+    left:1em;
+    top:7em;
+}
+.my-input {
+    margin-bottom: 7px;
+}
+
+.selectionList {
+    margin-left: 9em;
+    width:20em;
+     padding:10px;
+}
+.inputTag {
+     width:20em;
+     padding:10px;
+     position: relative;
+     left:10em;
+}
+.cost {
+    width:20em;
+     padding:10px;
+     position: relative;
+     left:18.5em;
+}
+.plateno {
+    width:20em;
+     padding:10px;
+     position: relative;
+     left:16.7em;
+}
+.updateBtn{
+    position: relative;
+    top:2em;
+    width:10em;
+    left:21em;
+}
+.cancelBtn{
+    position: relative;
+    top:0.5em;
+    width:10em;
+    left:31em;
+    text-decoration: none;
+    background: #000;
+    color:#fff;
+    
+}
+
+

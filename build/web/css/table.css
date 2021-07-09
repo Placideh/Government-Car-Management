@@ -1,0 +1,59 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 7, 2021, 6:47:42 AM
+    Author     : placideh
+*/
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color:#000;
+}
+a:hover{
+    color:blue;
+    background: #fff;
+}
+#main-header{
+    background-color:rgb(0,0,450);
+    color:#f4f4f4;
+    position: fixed;
+    display:flex;
+    top:0.02em;
+    height: 3em;
+    width:100%;
+    z-index:1;
+    box-sizing:border-box;
+}
+
+table {
+    position:relative;
+    top:4em;
+    left:15em;
+}
+.tableBody{
+    background: #ddd;
+    
+}
+
+
+.newCarBtn {
+    background: blue;
+    color:#f4f4f4;
+    position:relative;
+    left:55em;
+    top:3.5em;
+    border-radius: 5px;
+    /*height:12px;*/
+}
+.delBtn:hover{
+    color:red;
+}
