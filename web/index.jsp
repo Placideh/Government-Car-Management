@@ -17,6 +17,12 @@
         <title>Home Page</title>
         <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
+  <%
+            Map<String, String> errors = (Map)session.getAttribute("error");
+            pageContext.setAttribute("error", errors);
+            session.removeAttribute("error");
+  %>
+
     <body>
         <header id="main-header">
              <h3>Government Web Car Management</h3>
@@ -46,21 +52,21 @@
                     <div class="my-input">
                         <label class="error">${error["generalError"]}</label><br>
                         <label>PlateNo</label>
-                        <input type="text" class="plateno " name="plateno"  placeholder="GR###A|GP###Z" required>
+                        <input type="text" class="plateno "  name="plateno"  placeholder="GR###A|GP###Z" required>
                                <br> <label class="error">${error["plateNo"]}</label>
                     </div>
                      <div class="my-input">
                         <label>Manufacturing Date</label>
-                        <input type="date" class="inputTag" name="manufacturedDate"  required>
+                        <input type="date" class="inputTag"  name="manufacturedDate"  required>
                                <br><label class="error">${error["manufacturedDate"]}</label>
                     </div>
                      <div class="my-input">
                         <label>Cost</label>
-                        <input type="text" class="cost" name="cost"  required ><br>
+                        <input type="text" class="cost"  name="cost"  required ><br>
                        <label class="error">${error["cost"]}</label>
                     </div>
                         <label for="institution">Choose an Institution:</label>
-                        <select name="institution"  class="selectionList" required>
+                        <select name="institution"   class="selectionList" required>
                         <option value="REB">REB</option>
                         <option value="RAB">RAB</option>
                         <option value="RBA">RBA</option>

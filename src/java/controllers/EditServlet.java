@@ -49,6 +49,7 @@ public class EditServlet extends HttpServlet {
             
         }catch(IllegalArgumentException e){
             errors.put("generalError", e.getMessage());
+            req.getSession().setAttribute("editCar", car);
             req.getSession().setAttribute("error", errors);
             resp.sendRedirect("edit.jsp");
         }
@@ -68,7 +69,7 @@ public class EditServlet extends HttpServlet {
            }
            if(car.getCost()<minimumCarCost||car.getCost()>maxCarCost){
                
-               errors.put("cost","Cost Of Must Be between 15,000,000 and 60,000,000 RWF");
+               errors.put("cost","Cost Of car Must Be between 15,000,000 and 60,000,000 RWF");
            }
            if(errors.isEmpty()){
             return true;

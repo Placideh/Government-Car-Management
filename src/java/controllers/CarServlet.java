@@ -70,7 +70,7 @@ public class CarServlet extends HttpServlet {
            }
            if(car.getCost()<minimumCarCost||car.getCost()>maxCarCost){
                
-               errors.put("cost","Cost Of Must Be between 15,000,000 and 60,000,000 RWF");
+               errors.put("cost","Cost Of car Must Be between 15,000,000 and 60,000,000 RWF");
            }
            if(errors.isEmpty()){
             return true;

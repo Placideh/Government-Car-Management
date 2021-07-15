@@ -31,6 +31,13 @@ body{
     left:1em;
     top:7em;
 }
+.error {
+    color:red;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size:16px;
+    font-style: oblique;
+}
+
 .my-input {
     margin-bottom: 7px;
 }
