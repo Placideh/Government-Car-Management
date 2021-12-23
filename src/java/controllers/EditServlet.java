@@ -49,7 +49,6 @@ public class EditServlet extends HttpServlet {
             
         }catch(IllegalArgumentException e){
             errors.put("generalError", e.getMessage());
-            req.getSession().setAttribute("editCar", car);
             req.getSession().setAttribute("error", errors);
             resp.sendRedirect("edit.jsp");
         }
